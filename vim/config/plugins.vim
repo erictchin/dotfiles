@@ -79,18 +79,10 @@ map m <Plug>SendFocusedTestToTmux
 nmap c,w c,e
 nmap ci,w ci,e
 
-" Blockle
-
-" ,b is taken by CamelCaseMotion.
-let g:blockle_mapping = '<leader>B'
-
 " Ack.vim
 
 " Use The Silver Searcher.
 let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" vim-coffee-script
-let g:coffee_compile_vert = 1
 
 " exercism
 
