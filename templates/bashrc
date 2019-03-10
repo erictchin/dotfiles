@@ -1,0 +1,64 @@
+# Path to your dotfiles.
+export OSH=$HOME/.dotfiles
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-bash is loaded.
+OSH_THEME="axin"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Which completions would you like to load? (completions can be found in ~/.oh-my-bash/completions/*)
+# Custom completions may be added to ~/.oh-my-bash/custom/completions/
+completions=(
+  git
+  ssh
+  docker-composer
+  docker-machine
+  docker
+  kubectl
+  makefile
+  pip
+  pip3
+  terraform
+)
+
+# Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
+# Custom aliases may be added to ~/.oh-my-bash/custom/aliases/
+aliases=(
+  general
+  ls
+)
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
+# Custom plugins may be added to ~/.oh-my-bash/custom/plugins/
+plugins=(
+  git
+  bashmarks
+)
+
+source $OSH/initialize-dotfiles.sh
+
+###############################################################################
+# Other User Configuration
+###############################################################################
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+export EDITOR='vim'
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-bash libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-bash
+# users are encouraged to define aliases within the OSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias bashconfig="mate ~/.bashrc"
+# alias ohmybash="mate ~/.oh-my-bash"

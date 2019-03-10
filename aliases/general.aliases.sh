@@ -28,3 +28,12 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias src='source ~/.bashrc'                # src:          Reload .bashrc file
+alias hosts='sudo vim /etc/hosts'           # hosts:        Show the hosts file
+alias top='top -ocpu'
+
+# Portable ls with colors
+if ls --color -d . >/dev/null 2>&1; then
+  alias ls='ls --color=auto'  # Linux
+elif ls -G -d . >/dev/null 2>&1; then
+  alias ls='ls -G'  # BSD/OS X
+fi
