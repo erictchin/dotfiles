@@ -1,4 +1,8 @@
 
+[user]
+	name = erictchin
+	email = erictchin@users.noreply.github.com
+
 [includeIf "gitdir:~/src/github/"]
   path = ~/.dotfiles/templates/gitconfig/gitconfig-github
 [includeIf "gitdir:~/src/gitlab/"]
