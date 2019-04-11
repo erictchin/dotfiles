@@ -10,6 +10,7 @@ cd ~/.dotfiles
 
 ln -s ~/.dotfiles/templates/bashrc ~/.bashrc
 ln -s ~/.dotfiles/templates/vimrc ~/.vimrc
+ln -s ~/.dotfiles/templates/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/vim ~/.vim
 ```
 
