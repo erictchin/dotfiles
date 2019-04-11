@@ -8,9 +8,10 @@ This is generally a customized fork of [ohmybash](https://ohmybash.github.io/).
 git clone git@github.com:erictchin/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
-cp ~/.dotfiles/templates/bashrc ~/.bashrc
-cp ~/.dotfiles/templates/vimrc ~/.vimrc
+ln -s ~/.dotfiles/templates/bashrc ~/.bashrc
+ln -s ~/.dotfiles/templates/vimrc ~/.vimrc
 ln -s ~/.dotfiles/vim ~/.vim
+mkdir ~/.vim/backup
 ```
 
 ```bash
